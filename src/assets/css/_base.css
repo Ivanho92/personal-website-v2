@@ -59,36 +59,36 @@ blockquote {
 a {
 	color: theme('colors.primary');
 	text-decoration-color: theme('colors.medium');
-  text-decoration-thickness: .1em;
-  text-underline-offset: 2.5px;
+	text-decoration-thickness: 0.1em;
+	text-underline-offset: 2.5px;
 }
 
 a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 :focus {
 	outline: 2px solid theme('colors.primary');
-	outline-offset: .25rem;
+	outline-offset: 0.25rem;
 }
 
 @media (min-width: theme('screens.md')) {
 	h1 {
 		font-size: theme('fontSize.1000');
 	}
-	
+
 	h2 {
 		font-size: theme('fontSize.900');
 	}
-	
+
 	h3 {
 		font-size: theme('fontSize.800');
 	}
-	
+
 	h4 {
 		font-size: theme('fontSize.700');
 	}
-	
+
 	h5 {
 		font-size: theme('fontSize.600');
 	}
