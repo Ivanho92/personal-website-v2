@@ -58,7 +58,9 @@ blockquote {
 
 a {
 	color: theme('colors.primary');
-	text-decoration-color: theme('colors.primary');
+	text-decoration-color: theme('colors.medium');
+  text-decoration-thickness: .1em;
+  text-underline-offset: 2.5px;
 }
 
 a:hover {
@@ -66,7 +68,7 @@ a:hover {
 }
 
 :focus {
-	outline: 1px solid theme('colors.primary');
+	outline: 2px solid theme('colors.primary');
 	outline-offset: .25rem;
 }
 
