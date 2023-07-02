@@ -1,7 +1,7 @@
 .nav-items {
 	display: flex;
 	flex-wrap: nowrap;
-	gap: theme('spacing.md');
+	gap: theme('spacing.lg');
 	justify-content: flex-end;
 	list-style: none;
 	padding: 0;

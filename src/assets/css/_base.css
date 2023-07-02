@@ -17,6 +17,11 @@ h5 {
 	line-height: theme('lineHeight.heading');
 	color: theme('colors.primary');
 	max-width: theme('maxWidth.compact');
+	letter-spacing: -1px;
+}
+
+h1, h2 {
+	letter-spacing: -2px;
 }
 
 h1 {
