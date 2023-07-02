@@ -1,0 +1,21 @@
+[class^='flow'] {
+  display: flex;
+	flex-direction: column;
+	gap: theme('spacing.md');
+}
+
+.flow-sm {
+	gap: theme('spacing.sm');
+}
+
+.flow-lg {
+	gap: theme('spacing.lg');
+}
+
+.flow-xl {
+	gap: theme('spacing.xl');
+}
+
+.flow-xxl {
+	gap: theme('spacing.xxl');
+}

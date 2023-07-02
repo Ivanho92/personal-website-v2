@@ -1,0 +1,97 @@
+body {
+	color: theme('colors.darkest');
+	background-color: theme('colors.white');
+	line-height: theme('lineHeight.normal');
+	font-family: theme('fontFamily.base');
+	min-height: 100dvh;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: theme('fontFamily.heading');
+	font-weight: theme('fontWeight.bold');
+	line-height: theme('lineHeight.heading');
+	color: theme('colors.primary');
+	max-width: theme('maxWidth.compact');
+}
+
+h1 {
+	font-size: theme('fontSize.900');
+}
+
+h2 {
+	font-size: theme('fontSize.800');
+}
+
+h3 {
+	font-size: theme('fontSize.700');
+}
+
+h4 {
+	font-size: theme('fontSize.600');
+}
+
+h5 {
+	font-size: theme('fontSize.500');
+}
+
+p,
+li,
+blockquote {
+	max-width: theme('maxWidth.prose');
+}
+
+blockquote {
+	border-left: 0.8rem solid theme('colors.medium');
+	padding-inline-start: theme('spacing.lg');
+	padding-block: theme('spacing.md');
+	font-size: theme('fontSize.600');
+	color: theme('colors.medium');
+	line-height: theme('lineHeight.heading');
+	font-family: theme('fontFamily.heading');
+	font-weight: theme('fontWeight.normal');
+}
+
+a {
+	color: theme('colors.primary');
+	text-decoration-color: theme('colors.primary');
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+	outline: 1px solid theme('colors.primary');
+	outline-offset: .25rem;
+}
+
+@media (min-width: theme('screens.md')) {
+	h1 {
+		font-size: theme('fontSize.1000');
+	}
+	
+	h2 {
+		font-size: theme('fontSize.900');
+	}
+	
+	h3 {
+		font-size: theme('fontSize.800');
+	}
+	
+	h4 {
+		font-size: theme('fontSize.700');
+	}
+	
+	h5 {
+		font-size: theme('fontSize.600');
+	}
+
+	blockquote {
+		font-size: theme('fontSize.700');
+	}
+}

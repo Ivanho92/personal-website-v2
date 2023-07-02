@@ -1,0 +1,5 @@
+.wrapper {
+	width: min(100%, theme('screens.md'));
+	margin-inline: auto;
+	padding-inline: theme('spacing.md');
+}
