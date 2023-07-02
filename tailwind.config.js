@@ -5,6 +5,7 @@ const BASE_SIZE = 18; // in pixels
 const FONT_SIZE_ROUNDER = 4;
 const LINE_HEIGHT_BODY = '1.7';
 const LINE_HEIGHT_HEADING = '1.2';
+const HUE_COLOR_VALUE = '185';
 
 const size = (multiplicator = 1) => {
 	let fontSize = Math.round(BASE_SIZE * multiplicator);
@@ -17,19 +18,19 @@ module.exports = {
 
 	theme: {
 		colors: {
-			primary: 'hsl(185, 89%, 28%)',
+			primary: `hsl(${HUE_COLOR_VALUE}, 89%, 28%)`,
 
-			darkest: 'hsl(185, 7%, 24%)',
-			dark: 'hsl(185, 5%, 44%)',
-			medium: 'hsl(185, 24%, 49%)',
-			light: 'hsl(185, 51%, 92%)',
-			lightest: 'hsl(185, 33%, 97%)',
+			darkest: `hsl(${HUE_COLOR_VALUE}, 7%, 24%)`,
+			dark: `hsl(${HUE_COLOR_VALUE}, 5%, 44%)`,
+			medium: `hsl(${HUE_COLOR_VALUE}, 24%, 49%)`,
+			light: `hsl(${HUE_COLOR_VALUE}, 51%, 92%)`,
+			lightest: `hsl(${HUE_COLOR_VALUE}, 33%, 97%)`,
 
-			'darkest-shade': 'hsl(185, 0%, 24%)',
-			'dark-shade': 'hsl(185, 0%, 44%)',
-			'medium-shade': 'hsl(185, 0%, 49%)',
-			'light-shade': 'hsl(185, 0%, 92%)',
-			'lightest-shade': 'hsl(185, 0%, 97%)',
+			'darkest-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 24%)`,
+			'dark-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 44%)`,
+			'medium-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 49%)`,
+			'light-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 92%)`,
+			'lightest-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 97%)`,
 
 			white: '#FFFFFF',
 			transparent: 'transparent',
