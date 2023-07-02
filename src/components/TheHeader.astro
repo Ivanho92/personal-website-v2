@@ -1,4 +1,12 @@
-<nav class="bg-lightest py-md">
+---
+export interface Props {
+	position?: 'fixed' | 'sticky' | 'static';
+}
+
+const { position = 'static' } = Astro.props;
+---
+
+<nav class=`[ bg-lightest py-md ] [ ${position} top-0 left-0 right-0 ]`>
 	<div class="wrapper">
 		<ul class="nav-items">
 			<li><a href="/" data-state="active">Home</a></li>
