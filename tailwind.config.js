@@ -14,15 +14,16 @@ const size = (multiplicator = 1) => {
 
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+
 	theme: {
 		colors: {
-			'primary': 'hsl(185, 89%, 28%)',
+			primary: 'hsl(185, 89%, 28%)',
 
-			'darkest': 'hsl(185, 7%, 24%)',
-			'dark': 'hsl(185, 5%, 44%)',
-			'medium': 'hsl(185, 24%, 49%)',
-			'light': 'hsl(185, 51%, 92%)',
-			'lightest': 'hsl(185, 33%, 97%)',
+			darkest: 'hsl(185, 7%, 24%)',
+			dark: 'hsl(185, 5%, 44%)',
+			medium: 'hsl(185, 24%, 49%)',
+			light: 'hsl(185, 51%, 92%)',
+			lightest: 'hsl(185, 33%, 97%)',
 
 			'darkest-shade': 'hsl(185, 0%, 24%)',
 			'dark-shade': 'hsl(185, 0%, 44%)',
@@ -30,8 +31,8 @@ module.exports = {
 			'light-shade': 'hsl(185, 0%, 92%)',
 			'lightest-shade': 'hsl(185, 0%, 97%)',
 
-			'white': '#FFFFFF',
-			'transparent': 'transparent',
+			white: '#FFFFFF',
+			transparent: 'transparent',
 		},
 
 		fontSize: {
@@ -77,12 +78,13 @@ module.exports = {
 		},
 
 		fontWeight: {
-      normal: '400',
-      bold: '700',
-    },
+			normal: '400',
+			bold: '700',
+		},
 
 		extend: {},
 	},
+
 	plugins: [
 		plugin(({ theme, addUtilities }) => {
 			addUtilities(
@@ -94,6 +96,7 @@ module.exports = {
 			);
 		}),
 	],
+
 	corePlugins: {
 		preflight: false,
 	},

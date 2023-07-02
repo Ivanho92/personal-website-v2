@@ -1,4 +1,4 @@
-[class^='flow'] {
+[class*='flow'] {
   display: flex;
 	flex-direction: column;
 	gap: theme('spacing.md');
