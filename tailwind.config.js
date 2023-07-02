@@ -88,13 +88,24 @@ module.exports = {
 
 	plugins: [
 		plugin(({ theme, addUtilities }) => {
+			/* #region 'flow' utilities based on spacing values */
+			const flowUtilities = {};
+			Object.entries(theme('spacing')).forEach(([size, value]) => {
+				flowUtilities[`.flow-${size}`] = {
+					'--space': value,
+				};
+			});
+			addUtilities(flowUtilities, ['responsive']);
+			/* #endregion */
+
+			/* #region 'gap' default value */
 			addUtilities(
 				{
-					// Set default gap value to 'md' spacing
 					'.gap': { gap: theme('spacing.md') },
 				},
 				['responsive']
 			);
+			/* #endregion */
 		}),
 	],
 
