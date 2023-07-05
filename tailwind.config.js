@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin');
+import plugin from 'tailwindcss/plugin.js';
 
 const BASE_SIZE = 18; // in pixels
 const FONT_SIZE_ROUNDER = 4;
-const LINE_HEIGHT_BODY = '1.7';
-const LINE_HEIGHT_HEADING = '1.2';
 const HUE_COLOR_VALUE = '185';
 
 const size = (multiplicator = 1) => {
@@ -13,7 +11,7 @@ const size = (multiplicator = 1) => {
 	return fontSize + 'px';
 };
 
-module.exports = {
+const config = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 
 	theme: {
@@ -37,14 +35,14 @@ module.exports = {
 		},
 
 		fontSize: {
-			300: [size(0.8), { lineHeight: LINE_HEIGHT_BODY }],
-			400: [size(), { lineHeight: LINE_HEIGHT_BODY }],
-			500: [size(1.2), { lineHeight: LINE_HEIGHT_HEADING }],
-			600: [size(1.6), { lineHeight: LINE_HEIGHT_HEADING }],
-			700: [size(2), { lineHeight: LINE_HEIGHT_HEADING }],
-			800: [size(2.4), { lineHeight: LINE_HEIGHT_HEADING }],
-			900: [size(3), { lineHeight: LINE_HEIGHT_HEADING }],
-			1000: [size(3.8), { lineHeight: LINE_HEIGHT_HEADING }],
+			300: [size(0.8)],
+			400: [size()],
+			500: [size(1.2)],
+			600: [size(1.6)],
+			700: [size(2)],
+			800: [size(2.4)],
+			900: [size(3)],
+			1000: [size(3.8)],
 		},
 
 		spacing: {
@@ -63,13 +61,13 @@ module.exports = {
 		},
 
 		maxWidth: {
-			prose: '64ch',
+			base: '64ch',
 			compact: '18ch',
 		},
 
 		lineHeight: {
 			none: '1',
-			normal: '1.7',
+			base: '1.7',
 			heading: '1.1',
 		},
 
@@ -79,7 +77,7 @@ module.exports = {
 		},
 
 		fontWeight: {
-			normal: '400',
+			regular: '400',
 			bold: '700',
 		},
 
@@ -113,3 +111,6 @@ module.exports = {
 		preflight: false,
 	},
 };
+
+// module.exports = config;
+export default config;

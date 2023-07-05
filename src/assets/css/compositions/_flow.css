@@ -1,9 +1,9 @@
-[class*='flow'] {
+[class*="flow"] {
   display: flex;
-	flex-direction: column;
-	gap: var(--space, theme('spacing.md'));
+  flex-direction: column;
+  gap: var(--space, theme("spacing.md"));
 }
 
 .flow {
-	--space: theme('spacing.md');
+  --space: theme("spacing.md");
 }

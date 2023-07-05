@@ -1,0 +1,44 @@
+/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 05/07/2023.
+    Tokens location: ./tailwind.config.js */
+
+:root {
+  --color-primary: hsl(185, 89%, 28%);
+  --color-darkest: hsl(185, 7%, 24%);
+  --color-dark: hsl(185, 5%, 44%);
+  --color-medium: hsl(185, 24%, 49%);
+  --color-light: hsl(185, 51%, 92%);
+  --color-lightest: hsl(185, 33%, 97%);
+  --color-darkest-shade: hsl(185, 0%, 24%);
+  --color-dark-shade: hsl(185, 0%, 44%);
+  --color-medium-shade: hsl(185, 0%, 49%);
+  --color-light-shade: hsl(185, 0%, 92%);
+  --color-lightest-shade: hsl(185, 0%, 97%);
+  --color-white: #ffffff;
+  --color-transparent: transparent;
+  --space-0: 0px;
+  --space-px: 1px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-xxl: 80px;
+  --size-300: 16px;
+  --size-400: 20px;
+  --size-500: 24px;
+  --size-600: 32px;
+  --size-700: 36px;
+  --size-800: 44px;
+  --size-900: 56px;
+  --size-1000: 68px;
+  --breakpoint-md: 768px;
+  --measure-base: 64ch;
+  --measure-compact: 18ch;
+  --line-height-none: 1;
+  --line-height-base: 1.7;
+  --line-height-heading: 1.1;
+  --font-base: Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Eczar", Times New Roman, serif;
+  --weight-regular: 400;
+  --weight-bold: 700;
+}

@@ -1,10 +1,11 @@
 /* Reset styles */
-@import './_reset.css';
+@import "./_reset.css";
 
 /* Base styles */
-@import './_base.css';
+@import "./_variables.css";
+@import "./_base.css";
 
 /* Composition and utilities */
-@import './compositions';
-@import './utilities';
-@import './blocks';
+@import "./compositions";
+@import "./utilities";
+@import "./blocks";
