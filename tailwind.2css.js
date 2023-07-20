@@ -22,7 +22,7 @@ const conversionConfig = {
  * @param {Configuration} configObject
  * @returns {void}
  */
-const tailwindToCssVariables = ({ groups, dest }) => {
+const tailwindToCssVariables = async ({ groups, dest }) => {
 	let result = '';
 
 	// Add a note that this is auto generated
@@ -53,7 +53,7 @@ const tailwindToCssVariables = ({ groups, dest }) => {
   `;
 
 	// Make the CSS readable to help people with auto-complete in their editors
-	result = prettier.format(result, { parser: 'scss' });
+	result = await prettier.format(result, { parser: 'scss' });
 
 	// Push this file into the CSS dir, ready to go
 	fs.writeFileSync(dest, result);
