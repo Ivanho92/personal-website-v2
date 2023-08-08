@@ -8,7 +8,7 @@ const conversionConfig = {
 	groups: [
 		{ key: 'colors', prefix: 'color' },
 		{ key: 'spacing', prefix: 'space' },
-		{ key: 'fontSize', prefix: 'size' },
+		{ key: 'fontSize', prefix: 'fs' },
 		{ key: 'screens', prefix: 'breakpoint' },
 		{ key: 'maxWidth', prefix: 'measure' },
 		{ key: 'lineHeight', prefix: 'line-height' },
@@ -41,6 +41,8 @@ const tailwindToCssVariables = async ({ groups, dest }) => {
 		if (!group) {
 			return;
 		}
+
+		if (key === "fontSize") debugger;
 
 		Object.keys(group).forEach((key) => {
 			result += `--${prefix}-${key}: ${group[key]};`;

@@ -6,12 +6,21 @@ export interface Props {
 const { position = 'static' } = Astro.props;
 ---
 
-<nav class=`[ bg-lightest py-md ] [ ${position} top-0 left-0 right-0 ]`>
+<nav class=`[ bg-transparent py-md ] [ ${position} top-0 left-0 right-0 ]`>
 	<div class="wrapper">
-		<ul class="nav-items">
-			<li><a href="/" data-state="active">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="#footer">Footer</a></li>
-		</ul>
+		<div class="flex justify-end">
+			<ul class="nav-items">
+				<li><a href="/" data-state="active">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="#footer">Portfolio</a></li>
+			</ul>
+			<button>Contact Me</button>
+		</div>
 	</div>
 </nav>
+
+<style>
+	nav {
+		z-index: 100;
+	}
+</style>

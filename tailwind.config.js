@@ -7,7 +7,7 @@ const HUE_COLOR_VALUE = '185';
 
 const size = (multiplicator = 1) => {
 	let fontSize = Math.round(BASE_SIZE * multiplicator);
-	while (fontSize % FONT_SIZE_ROUNDER !== 0) fontSize++;
+	while (fontSize % 2 !== 0) fontSize++;
 	return fontSize + 'px';
 };
 
@@ -112,5 +112,4 @@ const config = {
 	},
 };
 
-// module.exports = config;
 export default config;
