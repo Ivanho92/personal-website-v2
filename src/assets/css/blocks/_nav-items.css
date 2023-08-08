@@ -1,9 +1,10 @@
-.nav-items {
+/* .nav-items {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   gap: theme("spacing.lg");
   justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
-}
+} */

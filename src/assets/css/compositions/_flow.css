@@ -1,9 +1,27 @@
-[class*="flow"] {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space, theme("spacing.md"));
+[class*="flow"] > * + * {
+  margin-top: var(--space, theme("spacing.md"));
 }
 
-.flow {
+.flow-xs {
+  --space: theme("spacing.xs");
+}
+
+.flow-sm {
+  --space: theme("spacing.sm");
+}
+
+.flow, .flow-md {
   --space: theme("spacing.md");
+}
+
+.flow-lg {
+  --space: theme("spacing.lg");
+}
+
+.flow-xl {
+  --space: theme("spacing.xl");
+}
+
+.flow-xxl {
+  --space: theme("spacing.xxl");
 }

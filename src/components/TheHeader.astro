@@ -6,21 +6,27 @@ export interface Props {
 const { position = 'static' } = Astro.props;
 ---
 
-<nav class=`[ bg-transparent py-md ] [ ${position} top-0 left-0 right-0 ]`>
+<nav class=`[ none bg-lightest py-md ] [ ${position} z-50 top-0 left-0 right-0 ]`>
 	<div class="wrapper">
-		<div class="flex justify-end">
-			<ul class="nav-items">
-				<li><a href="/" data-state="active">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="#footer">Portfolio</a></li>
+		<div class="text-right">
+			<button id="toggle-menu" class="md:hidden">Menu</button>
+		</div>
+		<div id="nav-menu" class="hidden md:block">
+			<ul class="[ flex flex-col gap-x-lg gap-y-md justify-end md:flex-row ] [ reset-list ]">
+				<li><a href="/" data-state="active" class="no-underline hover:underline">Home</a></li>
+				<li><a href="/about" class="no-underline hover:underline">About</a></li>
+				<li><a href="#footer" class="no-underline hover:underline">Portfolio</a></li>
+				<li><button>Contact Me</button></li>
 			</ul>
-			<button>Contact Me</button>
 		</div>
 	</div>
 </nav>
 
-<style>
-	nav {
-		z-index: 100;
-	}
-</style>
+<script>
+	const toggleMenuBtn = document.getElementById("toggle-menu");
+	const navMenu = document.getElementById("nav-menu")
+	
+	toggleMenuBtn?.addEventListener("click", () => {
+		navMenu?.classList.toggle("hidden");
+	});
+</script>

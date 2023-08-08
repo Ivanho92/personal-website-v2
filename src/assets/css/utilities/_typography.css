@@ -1,0 +1,15 @@
+.text-base {
+  line-height: var(--lh-base);
+  color: var(--color-darkest);
+  font-weight: var(--fw-base);
+  letter-spacing: var(--ls-normal);
+  max-width: var(--measure-normal);
+}
+
+.text-heading {
+  line-height: var(--lh-heading);
+  color: var(--color-primary);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-tight);
+  max-width: var(--measure-compact);
+}

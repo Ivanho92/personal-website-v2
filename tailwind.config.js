@@ -36,6 +36,7 @@ const config = {
 
 		fontSize: {
 			300: [size(0.8)],
+			"base": [size()],
 			400: [size()],
 			500: [size(1.2)],
 			600: [size(1.6)],
@@ -62,13 +63,18 @@ const config = {
 
 		maxWidth: {
 			base: '64ch',
-			compact: '18ch',
+			compact: '24ch',
 		},
 
 		lineHeight: {
 			none: '1',
 			base: '1.7',
 			heading: '1.1',
+		},
+
+		letterSpacing: {
+      tight: '-0.036em',
+      normal: '0em',
 		},
 
 		fontFamily: {

@@ -9,11 +9,12 @@ const conversionConfig = {
 		{ key: 'colors', prefix: 'color' },
 		{ key: 'spacing', prefix: 'space' },
 		{ key: 'fontSize', prefix: 'fs' },
-		{ key: 'screens', prefix: 'breakpoint' },
+		{ key: 'fontWeight', prefix: 'fw' },
+		{ key: 'fontFamily', prefix: 'ff' },
+		{ key: 'screens', prefix: 'bp' },
 		{ key: 'maxWidth', prefix: 'measure' },
-		{ key: 'lineHeight', prefix: 'line-height' },
-		{ key: 'fontFamily', prefix: 'font' },
-		{ key: 'fontWeight', prefix: 'weight' },
+		{ key: 'letterSpacing', prefix: 'ls' },
+		{ key: 'lineHeight', prefix: 'lh' },
 	],
 };
 

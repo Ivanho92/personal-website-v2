@@ -1,26 +1,20 @@
-<section class="[ full-bleed ] [ relative h-screen flex flex-col items-center justify-center ]">
-  <h1 class="visually-hidden">Ivan Rodrigues - Frontend Engineer & UI Designer</h1>
-  <div>
-    <div class="title">
-      <p class="intro">Hello, I'm</p>
-      <p class="name">Ivan Rodrigues</p>
-      <p class="tagline">Frontend Engineer &amp; UI Designer</p>
+<section class="full-bleed h-screen w-screen flex flex-col items-start justify-center">
+  <div class="wrapper">
+    <h1 class="visually-hidden">Ivan Rodrigues - Frontend Engineer & UI Designer</h1>
+    <div class="flow">
+      <div class="leading-heading">
+        <p class="text-500">Hello, I'm</p>
+        <p class="text-900">Ivan Rodrigues</p>
+        <p class="text-400">Frontend Engineer &amp; UI Designer</p>
+      </div>
+      <button>Open Portfolio</button>
     </div>
-    <button>Open Portfolio</button>
+    
+    <div class="wrapper absolute bottom-0 left-0 right-0 mb-md">
+      <ul class="flex gap-md justify-start reset-list">
+        <li>Linkedin</li>
+        <li>Github</li>
+      </ul>
+    </div>
   </div>
-  
-  <ul class="absolute flex gap-md justify-start bottom-0">
-    <li>Linkedin</li>
-    <li>Github</li>
-  </ul>
 </section>
-
-<style>
-  .title { 
-    line-height: 1.1; 
-  }
-
-  .title .intro { font-size: var(--fs-500); }
-  .title .name { font-size: var(--fs-900); }
-  .title .tagline { font-size: var(--fs-400); }
-</style>

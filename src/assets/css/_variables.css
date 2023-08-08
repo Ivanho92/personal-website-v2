@@ -31,14 +31,17 @@
   --fs-800: 44px;
   --fs-900: 54px;
   --fs-1000: 68px;
-  --breakpoint-md: 768px;
+  --fs-base: 18px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --ff-base: Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ff-heading: "Eczar", Times New Roman, serif;
+  --bp-md: 768px;
   --measure-base: 64ch;
-  --measure-compact: 18ch;
-  --line-height-none: 1;
-  --line-height-base: 1.7;
-  --line-height-heading: 1.1;
-  --font-base: Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-heading: "Eczar", Times New Roman, serif;
-  --weight-regular: 400;
-  --weight-bold: 700;
+  --measure-compact: 24ch;
+  --ls-tight: -0.036em;
+  --ls-normal: 0em;
+  --lh-none: 1;
+  --lh-base: 1.7;
+  --lh-heading: 1.1;
 }
