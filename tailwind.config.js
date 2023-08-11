@@ -30,6 +30,7 @@ const config = {
 			'light-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 92%)`,
 			'lightest-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 97%)`,
 
+			black: '#000000',
 			white: '#FFFFFF',
 			transparent: 'transparent',
 		},

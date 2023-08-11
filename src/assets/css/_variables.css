@@ -1,4 +1,4 @@
-/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 08/08/2023.
+/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 11/08/2023.
     Tokens location: ./tailwind.config.js */
 
 :root {
@@ -13,6 +13,7 @@
   --color-medium-shade: hsl(185, 0%, 49%);
   --color-light-shade: hsl(185, 0%, 92%);
   --color-lightest-shade: hsl(185, 0%, 97%);
+  --color-black: #000000;
   --color-white: #ffffff;
   --color-transparent: transparent;
   --space-0: 0px;
