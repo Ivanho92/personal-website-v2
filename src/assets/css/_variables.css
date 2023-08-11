@@ -1,4 +1,4 @@
-/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 11/08/2023.
+/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 14/08/2023.
     Tokens location: ./tailwind.config.js */
 
 :root {
@@ -37,7 +37,7 @@
   --fw-bold: 700;
   --ff-base: Roboto, "Helvetica Neue", Arial, sans-serif;
   --ff-heading: "Eczar", Times New Roman, serif;
-  --bp-md: 768px;
+  --breakpoint-md: 768px;
   --measure-base: 64ch;
   --measure-compact: 24ch;
   --ls-tight: -0.036em;

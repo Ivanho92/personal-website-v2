@@ -11,7 +11,7 @@ const conversionConfig = {
 		{ key: 'fontSize', prefix: 'fs' },
 		{ key: 'fontWeight', prefix: 'fw' },
 		{ key: 'fontFamily', prefix: 'ff' },
-		{ key: 'screens', prefix: 'bp' },
+		{ key: 'screens', prefix: 'breakpoint' },
 		{ key: 'maxWidth', prefix: 'measure' },
 		{ key: 'letterSpacing', prefix: 'ls' },
 		{ key: 'lineHeight', prefix: 'lh' },

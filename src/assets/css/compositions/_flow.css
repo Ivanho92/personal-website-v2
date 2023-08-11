@@ -1,27 +1,27 @@
 [class*="flow"] > * + * {
-  margin-top: var(--space, theme("spacing.md"));
+  margin-top: var(--space, var(--space-md));
 }
 
 .flow-xs {
-  --space: theme("spacing.xs");
+  --space: var(--space-xs);
 }
 
 .flow-sm {
-  --space: theme("spacing.sm");
+  --space: var(--space-sm);
 }
 
 .flow, .flow-md {
-  --space: theme("spacing.md");
+  --space: var(--space-md);
 }
 
 .flow-lg {
-  --space: theme("spacing.lg");
+  --space: var(--space-lg);
 }
 
 .flow-xl {
-  --space: theme("spacing.xl");
+  --space: var(--space-xl);
 }
 
 .flow-xxl {
-  --space: theme("spacing.xxl");
+  --space: var(--space-xxl);
 }
