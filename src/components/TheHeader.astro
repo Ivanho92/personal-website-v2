@@ -1,4 +1,6 @@
 ---
+import BaseButton from './base/BaseButton.astro';
+
 export interface Props {
 	position?: 'fixed' | 'sticky' | 'static';
 }
@@ -12,11 +14,11 @@ const { position = 'static' } = Astro.props;
 			<button id="toggle-menu" class="md:hidden">Menu</button>
 		</div>
 		<div id="nav-menu" class="hidden md:block">
-			<ul class="[ flex flex-col gap-x-lg gap-y-md justify-end md:flex-row ] [ reset-list ]">
-				<li><a href="/" data-state="active" class="no-underline hover:underline">Home</a></li>
+			<ul class="[ flex flex-col gap-x-lg gap-y-md justify-end items-center md:flex-row ] [ text-300 ] [ reset-list ]">
+				<li><a href="/" data-state="active" class="no-underline hover:underline transition-all">Home</a></li>
 				<li><a href="/about" class="no-underline hover:underline">About</a></li>
 				<li><a href="#footer" class="no-underline hover:underline">Portfolio</a></li>
-				<li><button>Contact Me</button></li>
+				<li><BaseButton label="Contact Me" variant="secondary" size="sm" /></li>
 			</ul>
 		</div>
 	</div>

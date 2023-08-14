@@ -17,6 +17,7 @@ const config = {
 	theme: {
 		colors: {
 			primary: `hsl(${HUE_COLOR_VALUE}, 89%, 28%)`,
+			'primary-shade': `hsl(${HUE_COLOR_VALUE}, 89%, 24%)`,
 
 			darkest: `hsl(${HUE_COLOR_VALUE}, 7%, 24%)`,
 			dark: `hsl(${HUE_COLOR_VALUE}, 5%, 44%)`,
@@ -24,11 +25,11 @@ const config = {
 			light: `hsl(${HUE_COLOR_VALUE}, 51%, 92%)`,
 			lightest: `hsl(${HUE_COLOR_VALUE}, 33%, 97%)`,
 
-			'darkest-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 24%)`,
-			'dark-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 44%)`,
-			'medium-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 49%)`,
-			'light-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 92%)`,
-			'lightest-shade': `hsl(${HUE_COLOR_VALUE}, 0%, 97%)`,
+			'darkest-grey': `hsl(${HUE_COLOR_VALUE}, 0%, 24%)`,
+			'dark-grey': `hsl(${HUE_COLOR_VALUE}, 0%, 44%)`,
+			'medium-grey': `hsl(${HUE_COLOR_VALUE}, 0%, 49%)`,
+			'light-grey': `hsl(${HUE_COLOR_VALUE}, 0%, 92%)`,
+			'lightest-grey': `hsl(${HUE_COLOR_VALUE}, 0%, 97%)`,
 
 			black: '#000000',
 			white: '#FFFFFF',
@@ -71,6 +72,7 @@ const config = {
 			none: '1',
 			base: '1.7',
 			heading: '1.1',
+			button: '1.3',
 		},
 
 		letterSpacing: {

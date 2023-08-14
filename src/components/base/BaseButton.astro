@@ -1,0 +1,85 @@
+---
+import BaseIcon from './BaseIcon.astro';
+
+interface Props {
+	label?: string;
+	variant?: 'primary' | 'secondary' | 'link';
+	size?: 'md' | 'sm';
+	icon?: string;
+}
+
+const { label, variant = 'primary', size = 'md', icon } = Astro.props;
+---
+
+<button
+	class={`
+		btn btn-${variant} btn-${size} 
+		${icon ? 'leading-none' : 'leading-button'}
+	`}
+>
+	{label ?? ''}
+	{icon ? <BaseIcon icon={icon} /> : ''}
+</button>
+
+<style is:global>
+	.btn {
+		--_space-btn: calc(var(--space-xs) + var(--space-xs) / 2);
+
+		font-size: var(--fs-base);
+		padding-block: var(--_space-btn);
+		padding-inline: var(--space-md);
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+		transition: all 150ms ease-in;
+	}
+
+	.btn path {
+		fill: currentColor;
+	}
+
+	.btn-sm {
+		font-size: var(--fs-300);
+		padding-block: var(--space-xs);
+		padding-inline: var(--space-sm);
+	}
+
+	.btn-primary {
+		color: var(--color-white);
+		background-color: var(--color-primary);
+	}
+
+	.btn-primary:hover {
+		/* backdrop-filter: brightness(80%); */
+		background-color: var(--color-primary-shade);
+	}
+
+	.btn-secondary {
+		color: var(--color-primary);
+		background-color: transparent;
+		box-shadow:
+			inset -1px 0 0 var(--color-primary),
+			inset 0 -1px 0 var(--color-primary),
+			inset 1px 0 0 var(--color-primary),
+			inset 0 1px 0 var(--color-primary);
+	}
+
+	.btn-secondary:hover {
+		color: var(--color-white);
+		background-color: var(--color-primary);
+	}
+
+	.btn-link {
+		color: var(--color-primary);
+		background-color: transparent;
+		text-decoration: underline;
+		text-underline-offset: 4px;
+		text-decoration-color: var(--color-medium);
+		text-decoration-thickness: 1.25px;
+	}
+
+	.btn-link:hover {
+		color: var(--color-primary-shade);
+		text-decoration-color: transparent;
+	}
+</style>
