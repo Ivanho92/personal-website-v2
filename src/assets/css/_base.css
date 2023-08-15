@@ -2,7 +2,7 @@ body {
   color: var(--color-darkest);
   background-color: var(--color-white);
   line-height: var(--lh-base);
-  font-family: var(--ff-regular);
+  font-family: var(--ff-base);
   min-height: 100dvh;
   overflow-x: hidden;
 }
@@ -12,7 +12,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-base);
   font-weight: var(--fw-bold);
   line-height: var(--lh-heading);
   max-width: var(--measure-compact);
@@ -57,7 +57,7 @@ blockquote {
   font-size: var(--fs-600);
   color: var(--color-medium);
   line-height: var(--lh-heading);
-  font-family: var(--ff-heading);
+  font-family: var(--ff-base);
   font-weight: var(--fw-regular);
 }
 

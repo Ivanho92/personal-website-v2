@@ -2,20 +2,33 @@
 import BaseIcon from './BaseIcon.astro';
 
 interface Props {
+	id?: string;
+	class?: string;
 	label?: string;
 	variant?: 'primary' | 'secondary' | 'link';
 	size?: 'md' | 'sm';
 	icon?: string;
 }
 
-const { label, variant = 'primary', size = 'md', icon } = Astro.props;
+const {
+	id,
+	label,
+	variant = 'primary',
+	size = 'md',
+	icon,
+	class: className,
+} = Astro.props;
 ---
 
 <button
-	class={`
-		btn btn-${variant} btn-${size} 
-		${icon ? 'leading-none' : 'leading-button'}
-	`}
+	id={id}
+	class:list={[
+		'btn',
+		`btn-${variant}`,
+		`btn-${size}`,
+		icon ? 'leading-none' : 'leading-button',
+		className,
+	]}
 >
 	{label ?? ''}
 	{icon ? <BaseIcon icon={icon} /> : ''}

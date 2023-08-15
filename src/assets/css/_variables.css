@@ -39,6 +39,7 @@
   --ff-base: Roboto, "Helvetica Neue", Arial, sans-serif;
   --ff-heading: "Eczar", Times New Roman, serif;
   --breakpoint-md: 768px;
+  --breakpoint-container: 1024px;
   --measure-base: 64ch;
   --measure-compact: 24ch;
   --ls-tight: -0.036em;

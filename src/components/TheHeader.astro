@@ -9,12 +9,12 @@ const { position = 'static' } = Astro.props;
 ---
 
 <nav class=`[ none bg-white py-md ] [ ${position} z-50 top-0 left-0 right-0 ]`>
-	<div class="container">
+	<div class="container flow">
 		<div class="text-right">
-			<button id="toggle-menu" class="md:hidden">Menu</button>
+			<BaseButton id="toggle-menu" class="md:hidden" label="Menu" size="sm" />
 		</div>
 		<div id="nav-menu" class="hidden md:block">
-			<ul class="[ flex flex-col gap-x-lg gap-y-md justify-end items-center md:flex-row ] [ text-300 ] [ reset-list ]">
+			<ul class="[ flex flex-col gap-x-lg gap-y-md justify-end items-end md:flex-row md:items-center ] [ text-300 ] [ reset-list ]">
 				<li><a href="/" data-state="active" class="no-underline hover:underline transition-all">Home</a></li>
 				<li><a href="/about" class="no-underline hover:underline">About</a></li>
 				<li><a href="#footer" class="no-underline hover:underline">Portfolio</a></li>

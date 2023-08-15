@@ -1,0 +1,32 @@
+---
+import contactImage from '@assets/images/handshake-1-tinted-removebg-preview.png';
+import BaseButton from './base/BaseButton.astro';
+import BaseIcon from './base/BaseIcon.astro';
+---
+<section class="bg-lightest">
+  <div class="container flex flex-col justify-between md:flex-row gap-md items-start">
+    <div class="flow">
+      <div>
+        <h2 class="text-base">Contact</h2>
+        <p class="text-heading text-700">Interested in working Together? 👇</p>
+      </div>
+      <div class="flex items-baseline gap-xxl">
+        <div>
+          <BaseIcon icon="mail-icon" />
+          <div>
+            <h3 class="text-base text-dark">Mail</h3>
+            <a href="mailto:ivan.joel.rodrigues@gmail.com">ivan.joel.rodrigues@gmail.com</a>
+          </div>
+        </div>
+        <div>
+          <BaseIcon icon="location-icon" />
+          <div>
+            <h3 class="text-base text-dark">Location</h3>
+            <p>Brussels, Belgium</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img width="300" src={contactImage} alt="">
+  </div>
+</section>

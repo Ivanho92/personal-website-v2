@@ -61,6 +61,7 @@ const config = {
 
 		screens: {
 			md: '768px',
+			container: '1024px'
 		},
 
 		maxWidth: {
