@@ -1,0 +1,33 @@
+---
+import BaseButton from '@components/base/BaseButton.astro';
+import BasePill from '../base/BasePill.astro';
+import aboutImage from '@assets/images/frontend-dev-working-2.png';
+---
+
+<article>
+	<div
+		class="[ shadow ] [ border border-solid rounded-lg border-light-grey p-md flow ]"
+	>
+		<div class="flow-sm">
+			<div>
+				<BasePill label="React" />
+				<BasePill label="SCSS" variant="secondary" />
+			</div>
+		</div>
+
+		<div class="flex flex-col gap-sm md:flex-row">
+			<div class="flow">
+        <h3 class="text-600">Awesome Project 🔑</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          veritatis quo cumque assumenda, magni beatae ut aspernatur explicabo
+          corporis placeat.
+        </p>
+        <BaseButton label="Live Demo" variant="secondary" />
+        <BaseButton label="Show Code" variant="link" />
+      </div>
+
+      <img src={aboutImage} alt="" width="300px" class="self-center" />
+		</div>
+	</div>
+</article>

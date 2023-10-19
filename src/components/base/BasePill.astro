@@ -1,0 +1,43 @@
+---
+import BaseIcon from './BaseIcon.astro';
+
+interface Props {
+	id?: string;
+	class?: string;
+	label?: string;
+	variant?: 'primary' | 'secondary';
+	size?: 'md' | 'sm';
+	icon?: string;
+}
+
+const {
+	id,
+	label,
+	variant = 'primary',
+	size = 'sm',
+	icon,
+	class: className,
+} = Astro.props;
+---
+
+<button
+	id={id}
+	class:list={[
+    'pill',
+    'py-xs px-md leading-none rounded-full border-transparent',
+    'text-darkest',
+    variant === 'primary' ? 'bg-light' : 'bg-lightest-grey',
+		className,
+	]}
+>
+	{label ?? ''}
+	{icon ? <BaseIcon icon={icon} /> : ''}
+</button>
+
+<style>
+  .pill {
+    /* border-radius: 50px; */
+    line-height: ;
+    /* padding: 0 1.5rem */
+  }
+</style>
