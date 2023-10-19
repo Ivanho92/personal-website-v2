@@ -10,7 +10,8 @@
   --space: var(--space-sm);
 }
 
-.flow, .flow-md {
+.flow,
+.flow-md {
   --space: var(--space-md);
 }
 
