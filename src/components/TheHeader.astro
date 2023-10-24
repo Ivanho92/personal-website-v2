@@ -9,26 +9,56 @@ const { position = 'static' } = Astro.props;
 ---
 
 <nav class=`[ none bg-white py-md ] [ ${position} z-50 top-0 left-0 right-0 ]`>
-	<div class="container flow">
+	<div class="container">
 		<div class="text-right">
 			<BaseButton id="toggle-menu" class="md:hidden" label="Menu" size="sm" />
 		</div>
-		<div id="nav-menu" class="hidden md:block">
-			<ul class="[ flex flex-col gap-x-lg gap-y-md justify-end items-end md:flex-row md:items-center ] [ text-300 ] [ reset-list ]">
-				<li><a href="/" data-state="active" class="no-underline hover:underline transition-all">Home</a></li>
-				<li><a href="/about" class="no-underline hover:underline">About</a></li>
-				<li><a href="#footer" class="no-underline hover:underline">Portfolio</a></li>
-				<li><BaseButton label="Contact Me" variant="secondary" size="sm" /></li>
+		<div id="nav-menu" class="hidden md:block mt-md md:mt-0">
+			<ul
+				class="[ flex flex-col gap-x-lg gap-y-md justify-end items-end md:flex-row md:items-center ] [ text-300 ] [ reset-list ]"
+			>
+				<li>
+					<a
+						href="#"
+						data-state="active"
+						class="[ menu-link ] no-underline hover:underline transition-all"
+						>Home</a
+					>
+				</li>
+				<li>
+					<a href="#about" class="[ menu-link ] no-underline hover:underline"
+						>About</a
+					>
+				</li>
+				<li>
+					<a
+						href="#portfolio"
+						class="[ menu-link ] no-underline hover:underline">Portfolio</a
+					>
+				</li>
+				<li>
+					<a href="#contact" class="[ menu-link ] no-underline hover:underline"
+						><BaseButton label="Contact Me" variant="secondary" size="sm" />
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
-</nav>
 
-<script>
-	const toggleMenuBtn = document.getElementById("toggle-menu");
-	const navMenu = document.getElementById("nav-menu")
-	
-	toggleMenuBtn?.addEventListener("click", () => {
-		navMenu?.classList.toggle("hidden");
-	});
-</script>
+	<script>
+		const toggleMenuBtn = document.getElementById('toggle-menu');
+		const navMenu = document.getElementById('nav-menu');
+
+		const menuLinks = navMenu?.querySelectorAll('.menu-link');
+		if (menuLinks) {
+			Array.from(menuLinks).forEach((el) =>
+				el.addEventListener('click', () => navMenu?.classList.toggle('hidden'))
+			);
+		}
+
+		toggleMenuBtn?.addEventListener('click', () => {
+			navMenu?.toggleAttribute('expanded');
+			navMenu?.classList.toggle('hidden');
+		});
+	</script>
+</nav>

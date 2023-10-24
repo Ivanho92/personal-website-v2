@@ -40,6 +40,7 @@ const config = {
 			300: [size(0.8)],
 			"base": [size()],
 			400: [size()],
+			450: [size(1.1)],
 			500: [size(1.2)],
 			600: [size(1.6)],
 			700: [size(2)],
@@ -60,8 +61,8 @@ const config = {
 		},
 
 		screens: {
-			md: '768px',
-			container: '1024px'
+			md: '960px',
+			container: '960px'
 		},
 
 		maxWidth: {

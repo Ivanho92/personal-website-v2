@@ -1,4 +1,4 @@
-/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 19/10/2023.
+/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 24/10/2023.
     Tokens location: ./tailwind.config.js */
 
 :root {
@@ -27,6 +27,7 @@
   --space-xxl: 80px;
   --fs-300: 14px;
   --fs-400: 18px;
+  --fs-450: 20px;
   --fs-500: 22px;
   --fs-600: 30px;
   --fs-700: 36px;
@@ -38,8 +39,8 @@
   --fw-bold: 700;
   --ff-base: Roboto, "Helvetica Neue", Arial, sans-serif;
   --ff-heading: "Eczar", Times New Roman, serif;
-  --breakpoint-md: 768px;
-  --breakpoint-container: 1024px;
+  --breakpoint-md: 960px;
+  --breakpoint-container: 960px;
   --measure-base: 64ch;
   --measure-compact: 24ch;
   --ls-tight: -0.036em;
